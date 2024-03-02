@@ -1,1 +1,1 @@
-This project is done using Node Js in backend and Angular in Frontend. Before running the project, you have to run npm install in the terminal to install development dependencies. After that, write npm start in the terminal and run the project.
+This project uses Node Js in the backend and Angular in the front end. Before running the project, you must run npm install in the terminal to install development dependencies. After that, write npm start in the terminal and run the project.
