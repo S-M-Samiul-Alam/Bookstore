@@ -1,0 +1,63 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.mat-toolbar.mat-primary {
+  background: #404040;
+  color: #fff;
+}
+.example-container {
+  width: 400px;
+  height: 200px;
+  margin: 12px;
+  border: 1px solid #555;
+}
+.mat-nav-list{
+  overflow: hidden;
+}
+.btn-group{
+  display: block;
+  padding-top: 5%;
+}
+.btn-group button {
+  background-color: #404040;
+  border: 2px solid rgba(39, 37, 37, 0.308);
+  color: rgb(255, 255, 255);
+  padding: 0px 0px 5px 0px  ;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: "/assets/images/Icon 1.png";
+  height: 50px;
+  font-size: 14px;
+  font-family: Roboto;
+  text-align: left;
+  width: 100%;
+  display: block;
+}
+.btn-group button:not(:last-child) {
+  border-bottom: none;
+}
+.btn-group button:hover{
+  background-color: #8f8686;
+  color: #FFFFFF;
+  border: 3px solid rgba(255, 255, 255, 0.233);
+  font-size: 14px;
+  font-family: Roboto;
+}
+.avatar {
+  float: none;
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  padding-top: 8%;
+}
+.username{
+  float: none;
+  width: 90%;
+  height: 50%;
+  margin: 0 auto;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 5px;
+  text-align: center;
+}

@@ -1,0 +1,35 @@
+<form [id]="formId" [formGroup]="form" (ngSubmit)="onSaveConfirmation()" novalidate>
+        <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" class="tab">
+            <div fxLayout="row wrap" fxLayoutGap="10px" fxFlex="100%" fxFlex.sm="50%" fxLayout.lt-sm="column"
+                fxFlex.xs="100%" fxLayoutAlign="flex-start">
+                <mat-form-field class="example-form" appearance="fill">
+                    <mat-label>Organization Code</mat-label>
+                    <input matInput formControlName="orgCode" required />
+                </mat-form-field>
+                <br>
+                <mat-form-field class="example-form" appearance="fill">
+                    <mat-label>Country Code</mat-label>
+                    <input matInput formControlName="companyCode" required />
+                </mat-form-field>
+                <br>
+                <mat-form-field class="example-form" appearance="fill">
+                    <mat-label>Name</mat-label>
+                    <input matInput formControlName="fullName" required />
+                </mat-form-field>
+                <br>
+                <mat-form-field class="example-form" class="example-form" appearance="fill">
+                    <mat-label>Phone</mat-label>
+                    <input matInput formControlName="phoneNumber" required />
+                </mat-form-field>
+                <br>
+                <mat-form-field class="example-form" appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input matInput formControlName="email" required />
+                </mat-form-field>
+
+            </div>
+        </div>
+        <div style="padding-left: 45%;">
+            <button mat-raised-button [disabled]="!this.form.valid" type="submit">Submit</button>
+        </div>
+    </form>

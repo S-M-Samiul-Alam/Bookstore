@@ -1,0 +1,53 @@
+<div>
+        <mat-toolbar color="primary">
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="myApplication.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <span>Book Store</span>
+            <span class="example-spacer"></span>
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+                <mat-icon>account_circle</mat-icon>
+            </button>
+        </mat-toolbar>
+
+        <mat-sidenav-container>
+            <mat-sidenav #myApplication autoFocus="false" class="sidenav"
+            (click)="myApplication.toggle()" style="background-color: white; width: 20%; height: 100%">
+                <mat-nav-list>
+                    <div class="btn-group">
+                        <div class="username">
+                            <h2 style="font-size: 14px">Shoaib@gmail.com</h2>
+                        </div>
+                        <!-- <button onclick="window.location.href='/user'">
+                            <i class="fa fa-dashboard"></i>
+                            User
+                        </button>
+                        <button onclick="window.location.href='/profile'">
+                            <i class="fa fa-user"></i>
+                            Profile
+                        </button>
+                        <button>
+                            <i class="fa fa-twitter"></i>
+                            Dashboard
+                        </button> -->
+                        <button onclick="window.location.href='/book'">
+                            <i class="fa fa-user"></i>
+                            Book
+                        </button>
+                    </div>
+                </mat-nav-list>
+            </mat-sidenav>
+            <mat-sidenav-content>
+                <div style="height: 88vh; padding: 1%;">
+                    <!-- <mat-card>
+                        <button mat-raised-button>
+                            HOME
+                        </button>
+                    </mat-card> -->
+                    <mat-card style=" padding-top: 1%;min-height: 101%;">
+                        <router-outlet></router-outlet>
+                    </mat-card>
+                </div>
+            </mat-sidenav-content>
+        </mat-sidenav-container> 
+</div>
